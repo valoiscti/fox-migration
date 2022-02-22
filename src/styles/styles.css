@@ -85,11 +85,11 @@ table.menu td {
 
 .menugradient {
 	background : url('/assets/images/topnav_bg.png');
-	background : -moz-linear-gradient(top, white, rgb(222, 218, 213));
-	background : -webkit-linear-gradient(top, white, rgb(222, 218, 213));
-	background : -ms-linear-gradient(top, white, rgb(222, 218, 213));
-	background : -o-linear-gradient(top, white, rgb(222, 218, 213));
-	background : linear-gradient(top, white, rgb(222, 218, 213));
+	background : -moz-linear-gradient(to bottom, white, rgb(222, 218, 213));
+	background : -webkit-linear-gradient(to bottom, white, rgb(222, 218, 213));
+	background : -ms-linear-gradient(to bottom, white, rgb(222, 218, 213));
+	background : -o-linear-gradient(to bottom, white, rgb(222, 218, 213));
+	background : linear-gradient(to bottom, white, rgb(222, 218, 213));
 	}
 
 .menu h1 {

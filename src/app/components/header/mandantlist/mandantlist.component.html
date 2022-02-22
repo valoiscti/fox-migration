@@ -1,0 +1,18 @@
+
+<select class="form-control" (click)="onMandantChanged()" [(ngModel)]="selectedMandant">
+    <option *ngFor="let mandant of mandantList" [value]="mandant">{{mandant}}</option>
+</select>
+        <!-- <xsl:for-each select="./mandant">
+            <xsl:choose>
+                <xsl:when test="$mandantId = ./@id">
+                    <option selected="true">
+                        <xsl:value-of select="./@id"/>
+                    </option>
+                </xsl:when>
+                <xsl:otherwise>
+                    <option>
+                        <xsl:value-of select="./@id"/>
+                    </option>
+                </xsl:otherwise>
+            </xsl:choose>
+        </xsl:for-each> -->

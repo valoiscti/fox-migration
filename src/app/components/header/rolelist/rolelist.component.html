@@ -1,0 +1,21 @@
+<select class="form-control" (click)="onRoleChanged()" [(ngModel)]="selectedRole">
+    <option *ngFor="let role of roleList" [value]="role">{{role}}</option>
+</select>
+<!-- <select name="roleId" ONCHANGE="mandantSelection.submit()">
+    <xsl:for-each select="./role">
+        <xsl:variable name="nameRole" select="./@name"/>
+        <xsl:variable name="idRole" select="./@id"/>
+        <xsl:choose>
+            <xsl:when test="$role = ./@id">
+                <option selected="true" value="{$idRole}">
+                    <xsl:value-of select="./@id" />
+                </option>
+            </xsl:when>
+            <xsl:otherwise>
+                <option value="{$idRole}">
+                    <xsl:value-of select="./@id" />
+                </option>
+            </xsl:otherwise>
+        </xsl:choose>
+    </xsl:for-each>
+</select> -->

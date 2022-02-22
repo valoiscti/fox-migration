@@ -1,1 +1,14 @@
-/* You can add global styles to this file, and also import other style files */
+@import 'styles/styles.css';
+@import 'styles/dataTable.css';
+@import 'styles/forms.css';
+@import 'styles/tabs.css';
+@import 'styles/sortableTable.css';
+@import 'styles/calendar.css';
+@import 'styles/stylesWorldline.css';
+@import 'styles/dataTableWorldline.css';
+@import 'styles/formsWorldline.css';
+@import 'styles/tabsWorldline.css';
+@import 'styles/sortableTableWorldline.css';
+@import 'styles/stylesPrint.css';
+@import 'styles/dataTablePrint.css';
+@import 'styles/sortableTablePrint.css';

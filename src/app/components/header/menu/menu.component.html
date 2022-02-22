@@ -1,0 +1,50 @@
+<ul>
+    <li *ngFor="let cat of menuCategories" [value]="cat">
+        <a href="" target="">
+            <span>
+                {{cat}}
+            </span>
+        </a>
+    </li>
+    <li>
+        <a href="logout.html?logout">
+            <span style="color:rgb(222, 57, 25);">
+                <!-- <dbI18n:text dbI18n:catalogue="menu">LOGOUT</dbI18n:text> -->
+                Log out
+            </span>
+        </a>
+    </li>
+    <!-- <xsl:for-each select="./menu-category">
+        <xsl:choose>
+            <xsl:when test="./@current = 'true'">
+                <li class="current_category">
+                    <a href="{./@url}" target="{./@target}">
+                        <span>
+                            <dbI18n:text dbI18n:catalogue="menu">
+                                <xsl:apply-templates select="./@i18nKey" />
+                            </dbI18n:text>
+                        </span>
+                    </a>
+                </li>
+            </xsl:when>
+            <xsl:otherwise>
+                <li>
+                    <a href="{./@url}" target="{./@target}">
+                        <span>
+                            <dbI18n:text dbI18n:catalogue="menu">
+                                <xsl:apply-templates select="./@i18nKey" />
+                            </dbI18n:text>
+                        </span>
+                    </a>
+                </li>
+            </xsl:otherwise>
+        </xsl:choose>
+    </xsl:for-each>
+    <li>
+        <a href="logout.html?logout">
+            <span style="color:rgb(222, 57, 25);">
+                <dbI18n:text dbI18n:catalogue="menu">LOGOUT</dbI18n:text>
+            </span>
+        </a>
+    </li> -->
+</ul>
