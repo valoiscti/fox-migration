@@ -1,0 +1,42 @@
+@media print {
+
+	div.forms-validation-message-popup {
+		display: none;
+	}
+	
+	div.columns1 table,
+	div.columns2 table,
+	div.columns4 table {
+	  border: 1px solid rgb(0,0,0);
+	}
+	
+	div.columns1 td.field {
+	  border-right: 1px solid rgb(0,0,0);
+	  border-bottom: 1px solid rgb(0,0,0);
+	}
+
+	div.columns2 td.label {
+	  border-right: 1px solid rgb(0,0,0);
+	  border-bottom: 1px solid rgb(0,0,0);
+	  color: rgb(0,0,0);
+	  font-style: italic;
+	}
+	
+	div.columns2 td.field {
+	  border-right: 1px solid rgb(0,0,0);
+	  border-bottom: 1px solid rgb(0,0,0);
+	}
+	
+	div.columns4 td.label {
+	  border-right: 1px solid rgb(0,0,0);
+	  border-bottom: 1px solid rgb(0,0,0);
+    color: rgb(0,0,0);
+    font-style: italic;
+	}
+	
+	div.columns4 td.field {
+	  border-right: 1px solid rgb(0,0,0);
+	  border-bottom: 1px solid rgb(0,0,0);
+	}
+	
+}

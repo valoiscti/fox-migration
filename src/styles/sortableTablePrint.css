@@ -1,0 +1,58 @@
+@media print {
+
+	table.sortableTable {
+	  border: 1px solid rgb(0,0,0);
+	}
+	
+	table.sortableTable th {
+	  font: italic 8.5pt Arial, Helvetica, "Trebuchet MS", Verdana, sans-serif;
+	  border-right: 1px solid rgb(0,0,0);
+	  border-left: 1px solid rgb(0,0,0);
+	  border-bottom: 1px solid rgb(0,0,0);
+	}
+	
+	table.sortableTable th.sortable,
+	table.sortableTable th.sortable-text,
+	table.sortableTable th.sortable-date,
+	table.sortableTable th.sortable-keep,
+	table.sortableTable th.sortable-date-dmy,
+	table.sortableTable th.sortable-numeric,
+	table.sortableTable th.sortable-currency,
+	table.sortableTable th.sortable-sortByTwelveHourTimestamp,
+	table.sortableTable th.sortable-sortIPAddress,
+	table.sortableTable th.sortable-sortEnglishLonghandDateFormat,
+	table.sortableTable th.sortable-sortScientificNotation,
+	table.sortableTable th.sortable-sortImage,
+	table.sortableTable th.sortable-sortFileSize {
+	   padding: 3px 3px 3px 3px;
+	}
+	
+	table.sortableTable th.forwardSort a,
+	table.sortableTable th.reverseSort a {
+	  color: rgb(0,0,0);
+	}
+	
+	table.sortableTable th a {
+	  color: rgb(0,0,0);
+	}
+	
+	table.sortableTable th a:hover {
+	  color: rgb(0,0,0);
+	}
+	
+	table.sortableTable td {
+	  border-right: 1px solid rgb(0,0,0);
+	  border-bottom: 1px solid rgb(0,0,0);
+	  padding: 3px 3px 3px 3px;
+	}
+	
+	table.sortableTable td a:hover {
+	  color:rgb(0,0,0);
+	  border-bottom:1px dotted rgb(0,0,0);
+	}
+	
+	table.sortableTable td.total {
+	  border-right: 1px solid rgb(0,0,0);
+	}
+  
+}

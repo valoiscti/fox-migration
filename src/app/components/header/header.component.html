@@ -1,0 +1,172 @@
+<html>
+    <head>
+        <title>Fox Web |
+            <!-- <xsl:value-of select="$mandantDescription"/> -->
+        </title>
+        <meta http-equiv="Content-Script-Type" content="text/javascript"/>
+        <meta http-equiv="expires" content="600"/>
+
+
+        <!-- Cocoon needs the IE compatibility set to IE8 (see forms-styling.xsl) in order to make the
+                MultiValueField to work correctly. To insure compatibility with IE8, we have to use jQuery 1.
+                Versions 2 and 3 are compatible with IE9+ only -->
+        
+        <script src="/scripts/jquery-1.12.4.min.js" type="text/javascript"></script>
+        <script src="/scripts/ajax.js" type="text/javascript"></script>
+        <script src="/scripts/tabs.js" type="text/javascript"></script>
+        <script src="/scripts/tablesort.js" type="text/javascript"></script>
+        <script src="/scripts/dialog.js" type="text/javascript"></script>
+        <script src="/scripts/util.js" type="text/javascript"></script>
+
+        <script type="text/javascript">
+            var unsaved = false;
+            function confirmNavigate(object) {
+            if (!unsaved || confirm("<dbI18n:text>CONFIRM_UNSAVED_NAVIGATE</dbI18n:text>")) {
+            cocoon.forms.submitForm(object, object.id);
+            }
+            return false;
+            }
+
+            function getValueWithPrefix(value) {
+            var strValue = '' + value;
+            if (strValue.length < 2) {
+            return '0' + strValue;
+            } else {
+            return strValue;
+            }
+            }
+
+            function updatePageLoadTime() {
+            var currentDate = new Date();
+
+            var dayOfMonth = getValueWithPrefix(currentDate.getDate());
+            var month = getValueWithPrefix(currentDate.getMonth()+1);
+            var year = getValueWithPrefix(currentDate.getFullYear());
+
+            var hours = getValueWithPrefix(currentDate.getHours());
+            var minutes = getValueWithPrefix(currentDate.getMinutes());
+            var seconds = getValueWithPrefix(currentDate.getSeconds());
+
+            var dateToDisplay = dayOfMonth + '.' + month + '.' + year + ' '
+            + hours + ':' + minutes + ':' + seconds;
+
+            document.getElementById('pageLoadTime').innerHTML = dateToDisplay;
+            }
+
+            Ajax.Responders.register({
+            onComplete: function() {
+            updatePageLoadTime();
+            }
+            });
+        </script>
+
+    </head>
+
+    <body onload="updatePageLoadTime();">
+        <div class="print_header">
+            <!-- <xsl:value-of> </xsl:value-of> -->
+            <!-- <xsl:value-of select="$currentDate"/>
+            <br/>
+            <xsl:value-of select="$userId"/> /
+            <xsl:value-of select="$mandantId"/>
+            <br/>
+            <dbI18n:text>ROLE</dbI18n:text>
+            :
+            <xsl:value-of select="$role"/>
+            <br/>
+            <xsl:value-of select="$foxinstance"/>
+            <xsl:value-of select="$foxversion"/> -->
+        </div>
+        <table id="outerTable" border="0" cellpadding="0" cellspacing="0" width="100%">
+            <tr>
+                <td width="12px"></td>
+                <td style="vertical-align:top;">
+                    <table border="0" cellpadding="0" cellspacing="0" id="mainTable">
+                        <tr class="noprint">
+                            <td width="100%" height="120px">
+                                <div style="position: absolute; top: 26px; left: 66px;">
+                                    <!-- <xsl:choose>
+                                        <xsl:when test="contains(/document/spsMandantList, $mandantId)">
+                                            <img alt="Worldline" src="images/worldline_logo.jpg" style="max-width:226px; max-height:60px; width: auto; height: auto;"/>
+                                        </xsl:when>
+                                        <xsl:otherwise>
+                                            <img alt="SIX" src="images/six-logo.png" width="105" height="29"/>
+                                        </xsl:otherwise> 
+                                    </xsl:choose>-->
+                                    <img 
+                                        class="img-responsive"
+                                        alt="Worldline" 
+                                        src="assets/images/worldlineLogo.jpg" 
+                                        style="max-width:226px; max-height:60px; width: auto; height: auto;"/>
+                                </div>
+                                <div style="position: absolute; top: 20px; left: 40%; font: bold 16pt Arial, Helvetica, 'Trebuchet MS', Verdana, sans-serif;">
+                                    Front Office Access
+                                </div>
+                                <form name="mandantSelection" action="home.html" method="POST">
+                                    <div style="position: absolute; top: 80px; right: 10em; white-space:nowrap; color: #fff; font-size: 9pt;"
+                                            align="right">
+                                        <!-- <xsl:value-of select="$userId"/> /
+                                        <xsl:copy-of select="/document/mandantList/*"/> -->
+                                    </div>
+                                    <div style="position: absolute; top: 80px; right: 12px; white-space:nowrap; color: #fff; font-size: 9pt;"
+                                            align="right">
+                                        <!-- <dbI18n:text>ROLE</dbI18n:text>
+                                        :
+                                        <xsl:copy-of select="/document/roleList/*"/> -->
+                                    </div>
+                                    <div style="position: absolute; top: 10px; right: 12px; font: italic 8pt Arial, Helvetica, 'Trebuchet MS', Verdana, sans-serif;">
+                                        <label id="pageLoadTime"></label>
+                                    </div>
+                                    <div style="position: absolute; top: 30px; right: 10px; border-radius: 30px; padding: 4px; box-shadow: inset 0 2px 3px rgba(0,0,0,0.66);"
+                                            align="center">
+                                        <!-- <xsl:value-of select="$foxinstance"/> /
+                                        <xsl:value-of select="$foxversion"/> -->
+                                    </div>
+                                </form>
+                            </td>
+                        </tr>
+                        <tr valign="top" class="noprint" style="box-shadow: 0 -1px 2px rgba(0, 0, 0, 0.66);">
+                            <td class="menugradient">
+                                <div id="tabs" class="tabs">
+                                    <!-- <xsl:copy-of select="/document/hmenu/*"/> -->
+                                </div>
+                            </td>
+                            <td align="right" class="menugradient" style="padding-right: 5px;">
+                                <a href="home.html?locale=de"
+                                    style="padding-left: 5px; text-decoration: none; color:#4D4F53;font-size: 8.5pt;">
+                                    D
+                                </a>
+                                <a href="home.html?locale=fr"
+                                    style="padding-left: 5px; text-decoration: none; color:#4D4F53;font-size: 8.5pt;">
+                                    F
+                                </a>
+                                <a href="home.html?locale=en"
+                                    style="padding-left: 5px; text-decoration: none; color:#4D4F53;font-size: 8.5pt;">
+                                    E
+                                </a>
+                            </td>
+                        </tr>
+                        <tr style="background: #fff; border-radius: 3px 3px 0 0; box-shadow: 0 5px 6px rgba(0, 0, 0, 0.66);">
+                            <td colspan="2">
+                                <!-- <xsl:call-template name="content"/> -->
+                            </td>
+                        </tr>
+                        <tr class="noprint">
+                            <td>
+                                <img src="./assets/images/spacer.gif" width="1068" height="1"/>
+                            </td>
+                            <td>
+                                <img src="./assets/images/spacer.gif" width="170" height="1"/>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+                <td width="12px"></td>
+            </tr>
+        </table>
+        <div style="visibility:hidden;" dojoType="dialog" id="dialog" bgColor="#696969" bgOpacity="0.7"
+                toggle="fade" toggleDuration="250" closeOnBackgroundClick="true">
+            <!-- <jx:import uri="pages/common/dialogClosePart.xml"/> -->
+        </div>
+    </body>
+</html>

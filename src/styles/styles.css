@@ -1,0 +1,268 @@
+/* Not used, as this is only supported by Firefox!*/
+/* But used as a reference... */
+
+:root {
+	--six-color-rock       : rgb(78, 78, 78);
+	--six-color-rock-80    : rgb(113, 113, 113);
+	--six-color-rock-60    : rgb(148, 148, 148);
+	--six-color-rock-40    : rgb(184, 184, 184);
+	--six-color-rock-20    : rgb(219, 219, 219);
+	--six-color-clay       : rgb(173, 163, 152);
+	--six-color-clay-80    : rgb(189, 181, 172);
+	--six-color-clay-60    : rgb(205, 199, 193);
+	--six-color-clay-40    : rgb(222, 218, 213);
+	--six-color-clay-20    : rgb(238, 236, 234);
+	--six-color-marine     : rgb(0, 44, 95);
+	--six-color-marine-80  : rgb(51, 86, 126);
+	--six-color-marine-60  : rgb(102, 128, 159);
+	--six-color-marine-40  : rgb(153, 170, 190);
+	--six-color-marine-20  : rgb(204, 212, 223);
+	--six-color-horizon    : rgb(136, 193, 228);
+	--six-color-horizon-80 : rgb(159, 205, 233);
+	--six-color-horizon-60 : rgb(183, 217, 238);
+	--six-color-horizon-40 : rgb(207, 230, 244);
+	--six-color-horizon-20 : rgb(231, 242, 249);
+	}
+
+html {
+	font    : normal 10pt Arial, Helvetica, "Trebuchet MS", Verdana, sans-serif;
+	margin  : 0;
+	padding : 0;
+	height  : 100%;
+	border  : none;
+	}
+
+#outerTable {
+	height : 100%;
+	}
+
+#mainTable {
+	height : 108px;
+	}
+
+div.content_right {
+	margin-top  : 20px;
+	margin-left : 5px;
+	border-left : 1px dotted rgb(78, 78, 78);
+	}
+
+div.content_right h1 {
+	margin-bottom : 10px;
+	margin-left   : 5px;
+	font-size     : 11pt;
+	border        : 0 solid;
+	}
+
+div.content_right p {
+	margin-bottom : 15px;
+	margin-left   : 10px;
+	font-size     : 10pt;
+	line-height   : 16px;
+	}
+
+div.content_left {
+	margin-right : 15px;
+	margin-top   : 20px;
+	}
+
+span.text {
+	font       : 10pt Arial, Helvetica, "Trebuchet MS", Verdana, sans-serif;
+	text-align : left;
+	}
+
+div.content_left p {
+	font : 10pt Arial, Helvetica, "Trebuchet MS", Verdana, sans-serif;
+	}
+
+table.menu {
+	font   : normal 9pt Arial, Helvetica, "Trebuchet MS", Verdana, sans-serif;
+	margin : 20px 20px 0 10px;
+	}
+
+table.menu td {
+	padding-bottom : 5px;
+	}
+
+.menugradient {
+	background : url('/assets/images/topnav_bg.png');
+	background : -moz-linear-gradient(top, white, rgb(222, 218, 213));
+	background : -webkit-linear-gradient(top, white, rgb(222, 218, 213));
+	background : -ms-linear-gradient(top, white, rgb(222, 218, 213));
+	background : -o-linear-gradient(top, white, rgb(222, 218, 213));
+	background : linear-gradient(top, white, rgb(222, 218, 213));
+	}
+
+.menu h1 {
+	font   : bold 10pt Arial, Helvetica, "Trebuchet MS", Verdana, sans-serif;
+	color  : rgb(78, 78, 78);
+	margin : 0;
+	}
+
+.menu a {
+	font            : normal 9pt Arial, Helvetica, "Trebuchet MS", Verdana, sans-serif;
+	color           : rgb(78, 78, 78);
+	text-decoration : none;
+	}
+
+.tooltip {
+	font  : normal 9pt Arial, Helvetica, "Trebuchet MS", Verdana, sans-serif;
+	color : rgb(64, 64, 64);
+	}
+
+.submitButton {
+	font         : normal 10pt Arial, Helvetica, "Trebuchet MS", Verdana, sans-serif;
+	margin-left  : 5px;
+	margin-right : 5px;
+	}
+
+.newsDate {
+	font            : normal 9pt Arial, Helvetica, "Trebuchet MS", Verdana, sans-serif;
+	color           : rgb(78, 78, 78);
+	text-decoration : none;
+	}
+
+a.newsLink {
+	font            : normal 9pt Arial, Helvetica, "Trebuchet MS", Verdana, sans-serif;
+	color           : rgb(78, 78, 78);
+	text-decoration : none;
+	}
+
+a.navigateLink {
+	text-decoration : underline;
+	color           : rgb(78, 78, 78);
+	}
+
+a.actionLink {
+	font            : normal 9pt Arial, Helvetica, "Trebuchet MS", Verdana, sans-serif;
+	color           : rgb(78, 78, 78);
+	text-decoration : none;
+	white-space     : nowrap;
+	font-weight     : bold;
+	margin-left     : 5px;
+	margin-right    : 5px;
+	}
+
+table.buttonPanelRight {
+	margin-left : 5px;
+	padding-top : 10px;
+	border-top  : 1px dotted rgb(173, 163, 152);
+	width       : 100%;
+	}
+
+div.buttonPanel table,
+div.titlePanel table {
+	width : 100%;
+	}
+
+div.buttonPanel table,
+div.buttonPanel td,
+div.titlePanel table,
+div.titlePanel td {
+	padding         : 0;
+	margin          : 0;
+	border          : 0;
+	border-spacing  : 0;
+	border-collapse : collapse;
+	white-space     : nowrap;
+	}
+
+.feedback {
+	width            : 99%;
+	padding-top      : 10px;
+	padding-bottom   : 10px;
+	padding-left     : 5px;
+	color            : rgb(78, 78, 78);
+	background-color : rgb(238, 236, 234);
+	border           : 1px solid rgb(173, 163, 152);
+	margin-bottom    : 10px;
+	}
+
+.feedback table {
+	font       : normal 9pt Arial, Helvetica, "Trebuchet MS", Verdana, sans-serif;
+	margin-top : 10px;
+	}
+
+.fieldDesc {
+	color : rgb(119, 136, 153);
+	}
+
+.errorfeedback table {
+	font       : normal 9pt Arial, Helvetica, "Trebuchet MS", Verdana, sans-serif;
+	margin-top : 10px;
+	}
+
+.print_header {
+	display : none;
+	}
+
+/* --- Dialog --- */
+.dojoDialog {
+	background         : rgb(238, 236, 234);
+	border             : 1px solid rgb(173, 163, 152);
+	-moz-border-radius : 5px;
+	padding            : 4px;
+	width              : 700px;
+	}
+
+.dojoDialog table {
+	font            : normal 0.97em Arial, Helvetica, "Trebuchet MS", Verdana, sans-serif;
+	border          : 1px solid rgb(173, 163, 152);
+	border-collapse : collapse;
+	width           : 100%;
+	}
+
+.dojoDialog tr.alt {
+	background : rgb(238, 236, 234);
+	}
+
+.dojoDialog tr {
+	background : white;
+	}
+
+.vertical-text {
+	display  : inline-block;
+	overflow : hidden;
+	width    : 1.5em;
+	}
+
+.minus90deg {
+	display                  : inline-block;
+	line-height              : 1.5;
+	white-space              : nowrap;
+	-webkit-transform        : translate(0, 100%) rotate(-90deg);
+	-moz-transform           : translate(0, 100%) rotate(-90deg);
+	-ms-transform            : translate(0, 100%) rotate(-90deg);
+	-o-transform             : translate(0, 100%) rotate(-90deg);
+	transform                : translate(0, 100%) rotate(-90deg);
+	-webkit-transform-origin : 0 0;
+	-moz-transform-origin    : 0 0;
+	-ms-transform-origin     : 0 0;
+	-o-transform-origin      : 0 0;
+	transform-origin         : 0 0;
+	}
+
+.minus90deg:after {
+	content : "";
+	display : block;
+	margin  : -1.5em 0 100%;
+	}
+
+.table-striped tr:nth-of-type(even) {
+	background-color: rgb(238, 236, 234);
+}
+
+table#regionCountryMappingList > tbody > tr > th.text-center {
+	vertical-align: middle;
+	text-align: center;
+}
+
+table#regionCountryMappingList > tbody > tr > th > .vertical-text > .minus90deg > span.forms.field.output {
+	padding-left: 8px;
+	padding-right: 8px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+}
+

@@ -1,0 +1,84 @@
+/* Not used, as this is only supported by Firefox!*/
+/* But used as a reference... */
+
+:root {
+	--six-color-red        : rgb(70, 190, 170);
+	}
+
+body {
+	background : white url('/assets/images/worldlinePace.png') no-repeat scroll 0 65px;
+	color      : black;
+	font       : normal 10pt Arial, Helvetica, "Trebuchet MS", Verdana, sans-serif;
+	margin     : 0;
+	padding    : 0;
+	height     : 100%;
+	border     : none;
+}
+
+div.content_left h1 {
+	font-size : 12pt;
+	color     : rgb(70, 190, 170);
+	clear     : both;
+	margin    : 0 0 0 0;
+	}
+
+.menu a.current_item {
+	color : rgb(70, 190, 170);
+	}
+
+.menu a:hover {
+	color : rgb(70, 190, 170);
+	}
+
+a.newsLink:hover, a.navigateLink:hover {
+	color : rgb(70, 190, 170);
+	}
+
+a.actionLinkActive {
+	font            : normal 9pt Arial, Helvetica, "Trebuchet MS", Verdana, sans-serif;
+	color           : rgb(70, 190, 170);
+	border-top      : 1px solid rgb(70, 190, 170);
+	border-bottom   : 1px solid rgb(70, 190, 170);
+	text-decoration : none;
+	white-space     : nowrap;
+	font-weight     : bold;
+	margin-left     : 5px;
+	margin-right    : 5px;
+	}
+
+a.actionLink:hover {
+	color         : rgb(70, 190, 170);
+	border-top    : 1px solid rgb(70, 190, 170);
+	border-bottom : 1px solid rgb(70, 190, 170);
+	}
+
+a.actionLinkRight {
+	font            : normal 9pt Arial, Helvetica, "Trebuchet MS", Verdana, sans-serif;
+	color           : rgb(70, 190, 170);
+	text-decoration : none;
+	white-space     : nowrap;
+	margin-left     : 0px;
+	margin-right    : 5px;
+	border-top      : 1px solid rgb(255, 255, 255);
+	border-bottom   : 1px solid rgb(255, 255, 255);
+	}
+
+a.actionLinkRight:hover {
+	border-top    : 1px solid rgb(70, 190, 170);
+	border-bottom : 1px solid rgb(70, 190, 170);
+	}
+
+.warningText {
+	font-weight : bold;
+	color       : rgb(70, 190, 170);
+	}
+
+.errorfeedback {
+	width            : 99%;
+	padding-top      : 10px;
+	padding-bottom   : 10px;
+	padding-left     : 5px;
+	background-color : rgb(238, 236, 234);
+	border           : 1px solid rgb(70, 190, 170);
+	margin-bottom    : 10px;
+	}

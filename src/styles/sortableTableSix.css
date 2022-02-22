@@ -1,0 +1,21 @@
+table.sortableTable th.forwardSort a,
+table.sortableTable th.reverseSort a {
+	outline : 0 none;
+	color   : rgb(222, 57, 25);
+	}
+
+table.sortableTable th a:hover {
+	text-decoration : none;
+	color           : rgb(222, 57, 25);
+	}
+
+table.sortableTable td a:hover {
+	color         : rgb(222, 57, 25);
+	border-bottom : 1px dotted rgb(222, 218, 213);
+	}
+
+ul.tablePaginaterTop li.currentPage a,
+ul.tablePaginaterBottom li.currentPage a {
+	border-color : rgb(222, 57, 25) !important;
+	color        : #000000;
+	}

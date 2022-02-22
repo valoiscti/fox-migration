@@ -1,0 +1,36 @@
+#tabs {
+	float       : left;
+	font-size   : 8.5pt;
+	font-weight : bold;
+	line-height : normal;
+	}
+
+#tabs ul {
+	margin       : 0;
+	padding-left : 0;
+	list-style   : none;
+	}
+
+#tabs li {
+	display : inline;
+	margin  : 0;
+	}
+
+#tabs a {
+	float           : left;
+	margin          : 0;
+	text-decoration : none;
+	}
+
+#tabs a span {
+	float         : left;
+	display       : block;
+	padding       : 3px 6px 3px 6px;
+	color         : rgb(78, 78, 78);
+	width         : 90px;
+	border-right  : 1px solid rgb(205, 199, 193);
+	border-left   : 0;
+	border-top    : 0;
+	border-bottom : 1px dotted rgb(205, 199, 193);
+	cursor        : pointer;
+	}

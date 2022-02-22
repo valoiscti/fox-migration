@@ -1,0 +1,48 @@
+@media print {
+	
+	.noprint {
+		display: none;
+	}
+	
+	body {
+		color: rgb(0, 0, 0);
+	}
+	
+	div.content_left h1 {
+		font-size: 14pt;
+		color: rgb(0, 0, 0);
+		margin-bottom: 20px;
+	}
+	
+	div.content_right {
+		border-left: 1px dotted rgb(0, 0, 0);
+	}
+	
+	div.content_right h1 {
+		margin-bottom: 20px;
+		font-size: 12pt;
+		color: rgb(0, 0, 0);
+	}
+	
+	div.buttonPanel table {
+		display: none;
+	}
+	
+	.submitButton {
+		display: none;
+	}
+	
+	a.actionLink {
+		display: none;
+	}
+	
+	.warningText {
+		color: rgb(0, 0, 0);
+	}
+	
+	.print_header {
+		display: block;
+		margin-bottom: 20px;
+	}
+	
+}

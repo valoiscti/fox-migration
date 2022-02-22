@@ -1,0 +1,55 @@
+.forms-validation-errors table {
+	font       : normal 9pt Arial, Helvetica, "Trebuchet MS", Verdana, sans-serif;
+	margin-top : 10px;
+	}
+
+.forms-tab {
+	background-color    : rgb(238, 236, 234);
+	border              : 1px solid rgb(184, 184, 184);
+	border-bottom-width : 0px;
+	padding             : 2px 1em 2px 1em;
+	margin-right        : 0px;
+	position            : relative;
+	text-decoration     : none;
+	top                 : -1px;
+	z-index             : 1;
+	cursor              : pointer;
+	}
+
+.forms-tab.forms-activeTab {
+	background-color : white;
+	font-weight      : bold;
+	padding-top      : 5px;
+	cursor           : default;
+	z-index          : 3;
+	}
+
+.forms-tabContent {
+	background-color : white;
+	border           : 1px solid rgb(184, 184, 184);
+	padding          : 1em;
+	position         : relative;
+	z-index          : 2;
+	}
+
+img.identityDocument {
+	max-width  : 240px;
+	max-height : 400px;
+	}
+
+td.identityDocumentCell {
+	padding : 10px 10px 10px 10px;
+	}
+
+img.merchantLogo {
+	max-width  : 200px;
+	max-height : 400px;
+	}
+
+td.merchantLogoCell {
+	padding : 10px 10px 10px 10px;
+	}
+
+select.field {
+	min-width : 50px;
+	}

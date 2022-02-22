@@ -1,0 +1,206 @@
+div.button {
+	margin : 20px 10px 10px 0px;
+	}
+
+div.text {
+	margin : 3px 10px 3px 10px;
+	}
+
+div.columns1,
+div.columns2,
+div.columns4,
+div.columns5,
+div.columns6,
+div.repeater,
+div.floatingcolumns {
+	margin : 10px 0px 25px 0px;
+	}
+
+.title {
+	font           : bold 10pt Arial, Helvetica, "Trebuchet MS", Verdana, sans-serif;
+	letter-spacing : 1px;
+	text-align     : left;
+	white-space    : nowrap;
+	}
+
+.field {
+	font : normal 9pt Arial, Helvetica, "Trebuchet MS", Verdana, sans-serif;
+	}
+
+div.columns1 table,
+div.columns2 table,
+div.columns2Short table,
+div.columns4 table,
+div.columns5 table,
+div.columns6 table,
+div.floatingcolumns table,
+div.repeater table {
+	font            : normal 9pt Arial, Helvetica, "Trebuchet MS", Verdana, sans-serif;
+	border          : 1px solid rgb(219, 219, 219);
+	border-collapse : collapse;
+	width           : 900px; /* = 100%, but has to be absolute because ie is bad in maths (cells will overlap because of margins and paddings)...*/
+	}
+
+div.columns1 table {
+	width : 66%;
+	}
+
+div.columns2Short table {
+	width : 50%;
+	}
+
+div.floatingcolumns th,
+div.columns4 th,
+div.repeater th {
+	font           : bold 8.5pt Arial, Helvetica, "Trebuchet MS", Verdana, sans-serif;
+	text-align     : left;
+	padding        : 3px 3px 3px 3px;
+	background     : rgb(219, 219, 219);
+	vertical-align : middle;
+	color          : rgb(78, 78, 78);
+	border-right   : 1px solid rgb(238, 236, 234);
+	border-left    : 1px solid rgb(238, 236, 234);
+	}
+
+div.columns1 tr.alt,
+div.columns2 tr.alt,
+div.columns2Short tr.alt,
+div.columns4 tr.alt,
+div.columns5 tr.alt,
+div.columns6 tr.alt,
+div.floatingcolumns tr.alt,
+div.repeater tr.forms-row-1 {
+	background : rgb(238, 236, 234);
+	}
+
+div.columns1 tr,
+div.columns2 tr,
+div.columns2Short tr,
+div.columns4 tr,
+div.columns5 tr,
+div.columns6 tr,
+div.floatingcolumns tr,
+div.repeater tr.forms-row-0 {
+	background : white;
+	}
+
+div.columns1 td.field {
+	border-right : 1px solid rgb(219, 219, 219);
+	padding      : 2px 3px 2px 3px;
+	width        : 100%;
+	}
+
+div.columns2 td.label {
+	border-right : 1px solid rgb(219, 219, 219);
+	padding      : 2px 3px 2px 3px;
+	width        : 20%;
+	color        : rgb(0, 0, 0);
+	}
+
+div.columns2 td.field {
+	border-right : 1px solid rgb(219, 219, 219);
+	padding      : 2px 3px 2px 3px;
+	width        : 80%;
+	font-weight  : bold;
+	}
+
+div.columns2Short td.label {
+	border-right : 1px solid rgb(219, 219, 219);
+	padding      : 2px 3px 2px 3px;
+	width        : 40%;
+	color        : rgb(0, 0, 0);
+	}
+
+div.columns2Short td.field {
+	border-right : 1px solid rgb(219, 219, 219);
+	padding      : 2px 3px 2px 3px;
+	width        : 60%;
+	font-weight  : bold;
+	}
+
+div.columns2 div.columns2Short td.field span.fieldDesc {
+	color : rgb(102, 128, 159);
+	}
+
+div.columns4 td.label {
+	border-right : 1px solid rgb(219, 219, 219);
+	padding      : 2px 3px 2px 3px;
+	width        : 20%;
+	color        : rgb(0, 0, 0);
+	}
+
+div.columns4 td.field {
+	border-right : 1px solid rgb(219, 219, 219);
+	padding      : 2px 3px 2px 3px;
+	width        : 30%;
+	font-weight  : bold;
+	}
+
+span.field, td.field {
+    font-weight  : bold;
+    }
+
+div.columns4 td.field span.fieldDesc {
+	color : rgb(102, 128, 159);
+	}
+
+div.columns5 td.label {
+	border-right : 1px solid rgb(219, 219, 219);
+	padding      : 2px 3px 2px 3px;
+	width        : 20%;
+	color        : rgb(0, 0, 0);
+	}
+
+div.columns5 td.field {
+	border-right : 1px solid rgb(219, 219, 219);
+	padding      : 2px 3px 2px 3px;
+	width        : 20%;
+	font-weight  : bold;
+	}
+
+div.columns6 td.label {
+	border-right : 1px solid rgb(219, 219, 219);
+	padding      : 2px 3px 2px 3px;
+	width        : 10%;
+	color        : rgb(0, 0, 0);
+	}
+
+div.columns6 td.field {
+	border-right : 1px solid rgb(219, 219, 219);
+	padding      : 2px 3px 2px 3px;
+	width        : 23%;
+	font-weight  : bold;
+	}
+
+div.columns6 td.field span.fieldDesc {
+	color : rgb(102, 128, 159);
+	}
+
+div.floatingcolumns td.label {
+	border-right : 1px solid rgb(219, 219, 219);
+	padding      : 2px 3px 2px 3px;
+	color        : rgb(0, 0, 0);
+	}
+
+div.floatingcolumns td.field {
+	border-right : 1px solid rgb(219, 219, 219);
+	padding      : 2px 3px 2px 3px;
+	font-weight  : bold;
+	}
+
+.spanningfield {
+	width : 598px;
+	}
+
+div.repeater td.field {
+	padding      : 2px 3px 2px 3px;
+	border-right : 1px solid rgb(219, 219, 219);
+	}
+
+a.navigate {
+	display : block;
+	padding : 3px 6px 3px 0;
+	color   : rgb(78, 78, 78);
+	cursor  : pointer;
+	}
+

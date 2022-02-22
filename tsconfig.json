@@ -23,6 +23,10 @@
       "dom"
     ]
   },
+  "paths": {
+    "@styles/*": ["./src/styles/*"],
+    "@assets/*": ["./src/assets/*"],
+  },
   "angularCompilerOptions": {
     "enableI18nLegacyMessageIdFormat": false,
     "strictInjectionParameters": true,

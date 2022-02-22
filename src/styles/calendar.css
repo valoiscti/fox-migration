@@ -1,0 +1,101 @@
+.CAL_cpDayColumnHeader,
+.CAL_cpYearNavigation,
+.CAL_cpMonthNavigation,
+.CAL_cpCurrentMonthDate,
+.CAL_cpCurrentMonthDateDisabled,
+.CAL_cpOtherMonthDate,
+.CAL_cpOtherMonthDateDisabled,
+.CAL_cpCurrentDate,
+.CAL_cpCurrentDateDisabled,
+.CAL_cpTodayText,
+.CAL_cpTodayTextDisabled,
+.CAL_cpText {
+	font-family : arial;
+	font-size   : 8pt;
+	}
+
+TD.CAL_cpDayColumnHeader {
+	text-align   : right;
+	border       : solid thin rgb(113, 113, 113);
+	border-width : 0 0 1 0;
+	}
+
+.CAL_cpCurrentMonthDate,
+.CAL_cpOtherMonthDate,
+.CAL_cpCurrentDate {
+	text-align      : right;
+	text-decoration : none;
+	}
+
+.CAL_cpCurrentMonthDateDisabled,
+.CAL_cpOtherMonthDateDisabled,
+.CAL_cpCurrentDateDisabled {
+	color           : rgb(113, 113, 113);
+	text-align      : right;
+	text-decoration : line-through;
+	}
+
+.CAL_cpCurrentMonthDate {
+	color       : rgb(113, 113, 113);
+	font-weight : bold;
+	}
+
+.CAL_cpCurrentDate {
+	color       : #FFFFFF;
+	font-weight : bold;
+	}
+
+.CAL_cpOtherMonthDate {
+	color : rgb(113, 113, 113);
+	}
+
+TD.CAL_cpCurrentDate {
+	color            : #FFFFFF;
+	background-color : rgb(113, 113, 113);
+	border-width     : 1;
+	border           : solid thin #000000;
+	}
+
+TD.CAL_cpCurrentDateDisabled {
+	border-width : 1;
+	border       : solid thin rgb(205, 199, 193);
+	}
+
+TD.CAL_cpTodayText,
+TD.CAL_cpTodayTextDisabled {
+	border       : solid thin rgb(118, 118, 118);
+	border-width : 1 0 0 0;
+	}
+
+A.CAL_cpTodayText,
+SPAN.CAL_cpTodayTextDisabled {
+	height : 20px;
+	}
+
+A.CAL_cpTodayText {
+	color       : rgb(113, 113, 113);
+	font-weight : bold;
+	}
+
+SPAN.CAL_cpTodayTextDisabled {
+	color : rgb(205, 199, 193);
+	}
+
+.CAL_cpBorder {
+	border : solid thin rgb(113, 113, 113);
+	width : 144px !important;
+	font-weight : bold;
+	}
+
+.CAL_cpInner {
+	width : 120px !important;
+}
+
+.CAL_cpOuter {
+	width : 144px !important;
+}
+
+.CAL_table{
+	width : 100% !important;
+}
+
